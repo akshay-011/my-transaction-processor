@@ -25,7 +25,7 @@
 
 ## generateLog
 
-- which will get call read file and throws error if exists
+- which will get call read file
 - returns proccesTransactions
 
 ## parseTransactions [✅]
