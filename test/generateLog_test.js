@@ -1,6 +1,11 @@
 import { describe, test } from "jsr:@std/testing/bdd";
 import { assertEquals } from "jsr:@std/assert";
-import { makeSummary, processTransactions } from "../src/generateLog.js";
+import {
+  generateLog,
+  makeSummary,
+  processTransactions,
+} from "../src/generateLog.js";
+import { fakeReadTextFile } from "./parseTransactions_test.js";
 
 describe("makeSummary", () => {
   test("no summary exists and a new data should create account deatils", () => {
@@ -62,5 +67,22 @@ describe("processTransactions", () => {
       ]),
       { akshay: 100, aadi: -100 }
     );
+  });
+});
+
+Deno.readTextFileSync = fakeReadTextFile;
+
+describe("generateLog", () => {
+  test("valid json data should give output", () => {
+    assertEquals(generateLog("data1.json"), {
+      akshay: 100,
+    });
+  });
+
+  test("valid json data should give output", () => {
+    assertEquals(generateLog("data2.json"), {
+      inkeet: 100,
+      aadi: -100,
+    });
   });
 });
