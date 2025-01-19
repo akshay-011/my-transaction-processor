@@ -1,0 +1,6 @@
+{
+  "transactions": [
+    { "type": "credit", "amount": 100, "account": "aadi" },
+    { "type": "debit", "amount": 100, "account": "akshay" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "transaction": [
+    { "type": "credit", "amount": 100, "account": "akshay" },
+    { "type": "credit", "amount": 100, "account": "inkeet" },
+    { "type": "debit", "amount": 100, "account": "aadi" },
+    { "type": "credit", "amount": 100, "account": "aadi" },
+    { "type": "debit", "amount": 100, "account": "akshay" }
+  ]
+}
