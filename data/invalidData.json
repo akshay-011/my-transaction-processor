@@ -1,0 +1,3 @@
+{
+  "transactions": [{ type: "credit", "amount": 100, "account": "akshay" }]
+}
