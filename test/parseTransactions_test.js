@@ -43,9 +43,9 @@ Deno.readTextFileSync = fakeReadTextFile;
 
 describe("parseTransactions", () => {
   test("valid json file should give me data", () => {
-    assertEquals(parseTransactions("data1.json"), {
-      transactions: [{ type: "credit", amount: 100, account: "akshay" }],
-    });
+    assertEquals(parseTransactions("data1.json"), [
+      { type: "credit", amount: 100, account: "akshay" },
+    ]);
   });
 
   test("invalid json file should give me correct error", () => {
