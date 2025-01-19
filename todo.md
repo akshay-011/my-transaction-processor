@@ -23,7 +23,19 @@
 
 - read file get json data as objects (handle error)
 
-## proccesTransactions
+## generateLog
+
+- which will get call read file and throws error if exists
+- returns proccesTransactions
+
+## readFile
+
+- which will take one argument file name
+- read the file and parsing it assuming it will be a json
+- if error throws a error of
+  `"Error: Unable to process transactions. Please check the file and try again."`
+
+## proccesTransactions [✅]
 
 - takes whole array and redue it to summary
 - we need a function to which will be the reducer (makeSummary)
