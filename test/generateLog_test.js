@@ -85,4 +85,16 @@ describe("generateLog", () => {
       aadi: -100,
     });
   });
+
+  test("valid json data should give output", () => {
+    assertEquals(generateLog("data3.json"), { aadi: 100, akshay: -100 });
+  });
+
+  test("valid json data should give output", () => {
+    assertEquals(generateLog("data4.json"), {
+      aadi: 0,
+      akshay: 0,
+      inkeet: 100,
+    });
+  });
 });

@@ -17,7 +17,7 @@ const files = {
   ]
 }`,
   "data4.json": `{
-  "transaction": [
+  "transactions": [
     { "type": "credit", "amount": 100, "account": "akshay" },
     { "type": "credit", "amount": 100, "account": "inkeet" },
     { "type": "debit", "amount": 100, "account": "aadi" },
