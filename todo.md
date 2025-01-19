@@ -37,7 +37,7 @@
 
   #### reconcileTransaction
 
-  - it will take account informations and transaction details like, type, name and amount
+  - it will take account informations and transaction details like type and amount
   - it will add amount if type is "credit"
   - and substract amount if type is "debit"
   - this will not create a new account only updates account
