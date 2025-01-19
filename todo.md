@@ -28,7 +28,7 @@
 - which will get call read file and throws error if exists
 - returns proccesTransactions
 
-## readFile
+## parseTransactions
 
 - which will take one argument file name
 - read the file and parsing it assuming it will be a json
