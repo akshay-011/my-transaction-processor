@@ -1,3 +1,4 @@
+import { parseTransactions } from "./parseTransactions.js";
 import { reconcileTransaction } from "./reconcileTransaction.js";
 
 export const makeSummary = (summary, transaction) => {
@@ -10,4 +11,9 @@ export const makeSummary = (summary, transaction) => {
 
 export const processTransactions = (transactions) => {
   return transactions.reduce(makeSummary, {});
+};
+
+export const generateLog = (fileName) => {
+  const transactions = parseTransactions(fileName);
+  return processTransactions(transactions);
 };
