@@ -7,3 +7,7 @@ export const makeSummary = (summary, transaction) => {
 
   return summary;
 };
+
+export const processTransactions = (transactions) => {
+  return transactions.reduce(makeSummary, {});
+};
