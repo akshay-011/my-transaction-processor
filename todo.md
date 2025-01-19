@@ -28,14 +28,14 @@
 - takes whole array and redue it to summary
 - we need a function to which will be the reducer (makeSummary)
 
-  ### makeSummary
+  ### makeSummary [✅]
 
   - takes a transaction and a existing summary
   - it will create the account holder if he doesn't exist
   - according type we will add and substract the data
     (reconcileTransaction)
 
-  #### reconcileTransaction
+  #### reconcileTransaction [✅]
 
   - it will take account informations and transaction details like type and amount
   - it will add amount if type is "credit"
