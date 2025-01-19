@@ -33,7 +33,7 @@ const files = {
 
 export const fakeReadTextFile = (fileName) => {
   if (!(fileName in files)) {
-    throw "file not found";
+    throw "file not found ";
   }
 
   return files[fileName];
